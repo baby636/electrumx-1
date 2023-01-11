@@ -15,7 +15,7 @@ RUN python -m venv venv \
     && venv/bin/pip install --no-cache-dir e-x[rapidjson,rocksdb]==1.16.0
 
 
-FROM python:3.9.4-slim-buster
+FROM python:3.12.0a3-slim-buster
 
 # Install the libs needed by rocksdb (no development headers or statics)
 RUN apt-get update \
